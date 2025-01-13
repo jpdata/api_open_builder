@@ -10,7 +10,9 @@ For general information about developing packages, see the Dart guide for
 and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages). 
 -->
-# Open Builder Api , for Dart backend development
+# Open Builder Api V0.0.1 , for Dart backend development
+
+WORK INPROGRESS
 
 This package is an atempt toto build a small framework to build Open Api compliant json that cab be used to build a gui like .Net's swagger
 
