@@ -12,7 +12,7 @@ and the Flutter guide for
 -->
 # Open Builder Api V0.0.1 , for Dart backend development
 
-WORK INPROGRESS
+WORK IN PROGRESS
 
 This package is an atempt toto build a small framework to build Open Api compliant json that cab be used to build a gui like .Net's swagger
 
