@@ -4,6 +4,9 @@ import 'package:api_open_builder/src/api_open_annotations.dart';
 import 'package:api_open_builder/src/api_open_models.dart';
 import 'package:collection/collection.dart';
 
+///Api Open Bulder main class
+///
+///
 class ApiOpenBuilder {
   //singleton code
   static ApiOpenBuilder? _instance;
@@ -15,15 +18,21 @@ class ApiOpenBuilder {
 
   ApiOpenBuilder._internal(this._info, this._servers);
 
+  ///Create or get the singleton instance of the [ApiOpenBuilder]
+  ///
+  ///[info] is the [Info] object with the API information
+  ///[servers] is a list of [Uri] with the servers of the API
   factory ApiOpenBuilder({required Info info, List<Uri> servers = const []}) {
     _instance ??= ApiOpenBuilder._internal(info, servers);
     return _instance!;
   }
 
+  ///Add a list of [Tag] to the API
   void addTags(List<Tag> tags) {
     _tags.addAll(tags);
   }
 
+  ///Get the OpenAPI specification as a JSON string
   String getOpenApiSpec({required List<Type> types}) {
     var paths = <String, dynamic>{};
     var schemas = <String, Map<String, dynamic>>{};
